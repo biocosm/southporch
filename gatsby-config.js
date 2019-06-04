@@ -22,8 +22,8 @@ module.exports = {
         name: "SPACE PIRATE RADIO",
         short_name: "SPR",
         start_url: "/",
-        background_color: "#b73490",
-        theme_color: "#b73490",
+        background_color: "#90c485",
+        theme_color: "#90c485",
         display: `standalone`,
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
         crossOrigin: `use-credentials`,
@@ -39,7 +39,7 @@ module.exports = {
     {
       resolve: `gatsby-source-rss-feed`,
       options: {
-        url: `http://feeds.feedburner.com/streetfightradio.rss`,
+        url: `https://feeds.feedburner.com/streetfightradio.rss`,
         name: `StreetFight`,
     }
   },
@@ -53,7 +53,7 @@ module.exports = {
     {
       resolve: `gatsby-source-rss-feed`,
       options: {
-        url: `http://feeds.soundcloud.com/users/soundcloud:users:465360117/sounds.rss`,
+        url: `https://feeds.soundcloud.com/users/soundcloud:users:465360117/sounds.rss`,
         name: `MandatoryOT`,
     }
   },
@@ -67,35 +67,28 @@ module.exports = {
     {
       resolve: `gatsby-source-rss-feed`,
       options: {
-        url: `http://feeds.fans.fm/105.xml`,
+        url: `https://feeds.fans.fm/105.xml`,
         name: `TheAntifada`,
     }
   },
     {
       resolve: `gatsby-source-rss-feed`,
       options: {
-        url: `http://redscarepodcast.libsyn.com/rss`,
-        name: `RedScare`,
-    }
-  },
-    {
-      resolve: `gatsby-source-rss-feed`,
-      options: {
-        url: `http://feeds.soundcloud.com/users/soundcloud:users:211911700/sounds.rss`,
+        url: `https://feeds.soundcloud.com/users/soundcloud:users:211911700/sounds.rss`,
         name: `ChapoTrap`,
     }
   },
     {
       resolve: `gatsby-source-rss-feed`,
       options: {
-        url: `http://feeds.soundcloud.com/users/soundcloud:users:300222802/sounds.rss`,
+        url: `https://feeds.soundcloud.com/users/soundcloud:users:300222802/sounds.rss`,
         name: `TrillbillyWorkers`,
     }
   },
     {
       resolve: `gatsby-source-rss-feed`,
       options: {
-        url: `http://feeds.soundcloud.com/users/soundcloud:users:492135420/sounds.rss`,
+        url: `https://feeds.soundcloud.com/users/soundcloud:users:492135420/sounds.rss`,
         name: `QAnonAnon`,
     }
   },
@@ -116,7 +109,7 @@ module.exports = {
     {
       resolve: `gatsby-source-rss-feed`,
       options: {
-        url: `http://feeds.soundcloud.com/users/soundcloud:users:324031914/sounds.rss`,
+        url: `https://feeds.soundcloud.com/users/soundcloud:users:324031914/sounds.rss`,
         name: `PodDamn`,
     }
   },

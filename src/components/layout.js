@@ -25,6 +25,11 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
+        <div style={{position: "fixed", align: "center", top: 0, width: "100vw", height: "100vh", zIndex: -1,}}>
+          <video autoPlay="autoplay" muted loop id="myVideo" width="100%" height="100%" style={{objectFit:"cover", objectPosition:"center"}}>
+            <source src="planet-igrr.webm" type="video/webm" style={{}}/>
+          </video>
+        </div>
         <Header siteTitle={data.site.siteMetadata.title} />
         <div
           style={{

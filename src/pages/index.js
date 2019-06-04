@@ -27,34 +27,35 @@ export default( { data } ) => {
   const playls = feeds.map( e => ( { url: e.node.enclosure.url, title: e.node.title } ) )
   const somas = [
     {
-      url: 'http://ice2.somafm.com/fluid-128-mp3',
-      title: 'Fluid'
-    }, {
-      url: 'http://ice2.somafm.com/groovesalad-256-mp3',
-      title: 'Groove Salad'
+      url: 'http://ice2.somafm.com/missioncontrol-128-aac',
+      title: 'Mission Control'
     }, {
       url: 'http://ice2.somafm.com/spacestation-128-aac',
       title: 'Space Station Soma'
+    }, {
+      url: 'http://ice2.somafm.com/fluid-128-mp3',
+      title: 'Fluid'
     }
   ]
 
   return ( <Layout >
 
-    <SEO title="SOUTHPORCH - cyberprop radio" keywords={[
+    <SEO title="SPACE PIRATE RADIO" keywords={[
         `radio`,
         `dirtbag`,
         `left`,
         'weird',
-        'twitter',
-        'southporch'
+        'podcast',
+        'intergalactic railroad',
+        'biocosm'
       ]}/>
     <div style={{
-        backgroundColor: '#bbb',
+        backgroundColor: '#372d34',
         marginTop: '82vh',
         marginBottom: '100vh',
         borderWidth: '4px',
         borderStyle: 'solid',
-        borderColor: "#b73490"
+        borderColor: "#90c485",
       }}>
       <MediaPlayer
         autoplay={true}
@@ -68,13 +69,14 @@ export default( { data } ) => {
         controls={[ 'playpause', 'volume', 'forwardskip',  ]}
         playlist={somas}
         mediaElementRef={media => {
-
+          media.volume= 0.1
         }}
         />
 
     <div style={{
         marginTop: '1rem',
-        padding: '2rem'
+        padding: '2rem',
+        color: '#90c485'
       }}>
       <h2>Playlist</h2>
       <table>
@@ -89,12 +91,13 @@ export default( { data } ) => {
             feeds.map( ( {
               node
             }, index ) => ( <tr key={index}>
-              <td>{node.pubDate.slice(0,11)}</td>
-              <td>{node.title}</td>
+              <td style={{color: '#496984'}}>{node.pubDate.slice(0,11)}</td>
+              <td><a href={node.link} style={{ textDecoration: "none", color:"#f0eee7"}}>{node.title}</a></td>
             </tr> ) )
           }
         </tbody>
       </table>
+      <h4 style={{textAlign: "center"}}>With ❤ from <a href="http://biocosm.xyz" target="_blank" rel="noopener noreferrer" style={{textDecoration: "none", color:"#f0eee7"}}>IGRR</a></h4>
     </div>
   </div>
   </Layout> )

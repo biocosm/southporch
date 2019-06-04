@@ -7,7 +7,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('/free-meals.gif');
+  background-image: url('/planet-igrr.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -209,7 +209,8 @@ html {
 body {
   color: hsla(0, 0%, 0%, 0.8);
   font-family: monospace;
-  font-weight: normal;
+  font-weight: bold;
+  text-transform: uppercase;
   word-wrap: break-word;
   font-kerning: normal;
   -moz-font-feature-settings: "kern", "liga", "clig", "calt";

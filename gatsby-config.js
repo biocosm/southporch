@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `SOUTHPORCH`,
-    description: `cyberprop radio for hitech lowlifes`,
+    title: `SPACE PIRATE RADIO`,
+    description: `listen forever, take everywhere`,
     author: `wificat`,
   },
   plugins: [
@@ -19,8 +19,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "SOUTHPORCH - cyberprop radio",
-        short_name: "SOUTHPORCH",
+        name: "SPACE PIRATE RADIO",
+        short_name: "SPR",
         start_url: "/",
         background_color: "#b73490",
         theme_color: "#b73490",

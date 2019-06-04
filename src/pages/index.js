@@ -97,7 +97,7 @@ export default( { data } ) => {
           }
         </tbody>
       </table>
-      <h4 style={{textAlign: "center"}}>With ❤ from <a href="http://biocosm.xyz" target="_blank" rel="noopener noreferrer" style={{textDecoration: "none", color:"#f0eee7"}}>IGRR</a></h4>
+      <h4 style={{textAlign: "center"}}>With ❤ from <a href="http://biocosm.xyz" target="_blank" style={{textDecoration: "none", color:"#f0eee7"}}>IGRR</a></h4>
     </div>
   </div>
   </Layout> )

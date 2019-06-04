@@ -24,7 +24,7 @@ export default( { data } ) => {
     return new Date( b.node.pubDate ) - new Date( a.node.pubDate );
   } );
 
-  const playls = feeds.map( e => ( { url: e.node.enclosure.url, title: e.node.title } ) )
+  const playls = feeds.map( e => ( { url: e.node.enclosure.url.replace(/http:/, "https:"), title: e.node.title } ) )
   const somas = [
     {
       url: 'http://ice2.somafm.com/missioncontrol-128-aac',

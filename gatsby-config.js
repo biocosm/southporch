@@ -113,13 +113,20 @@ module.exports = {
         name: `PodDamn`,
     }
   },
+    {
+      resolve: `gatsby-source-rss-feed`,
+      options: {
+        url: `https://pinecast.com/feed/igrr`,
+        name: `InterGalactic`,
+      }
+  },
   {
     resolve: `gatsby-source-rss-feed`,
     options: {
-      url: `https://pinecast.com/feed/igrr`,
-      name: `InterGalactic`,
-  }
-},
+      url: `https://feed.podbean.com/psychicdolphingarage/feed.xml`,
+      name: 'PsychicDolphin',
+    }
+  },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
      'gatsby-plugin-offline',

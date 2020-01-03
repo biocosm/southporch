@@ -19,7 +19,8 @@ export default( { data } ) => {
     ...data.allFeedDumbBitch.edges,
     ...data.allFeedCurrentAffairs.edges,
     ...data.allFeedPodDamn.edges,
-    ...data.allFeedInterGalactic.edges
+    ...data.allFeedInterGalactic.edges,
+    ...data.allFeedPsychicDolphin.edges
   ].sort( function( a, b ) {
     return new Date( b.node.pubDate ) - new Date( a.node.pubDate );
   } );
@@ -322,6 +323,25 @@ query {
 
   }
   allFeedInterGalactic(limit:3) {
+   totalCount
+   edges {
+     node {
+       title
+       isoDate
+       link
+       pubDate
+       enclosure {
+         url
+       }
+       contentSnippet
+       itunes {
+         author
+       }
+     }
+   }
+
+ }
+ allFeedPsychicDolphin(limit:3) {
    totalCount
    edges {
      node {

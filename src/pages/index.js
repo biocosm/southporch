@@ -296,7 +296,6 @@ query {
         enclosure {
           url
         }
-        contentSnippet
         itunes {
           author
         }

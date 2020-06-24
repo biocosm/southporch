@@ -11,7 +11,6 @@ export default( { data } ) => {
     ...data.allFeedStreetFight.edges,
     ...data.allFeedSrslyWrong.edges,
     ...data.allFeedMandatoryOt.edges,
-    ...data.allFeedTrashFuture.edges,
     ...data.allFeedTheAntifada.edges,
     ...data.allFeedChapoTrap.edges,
     ...data.allFeedTrillbillyWorkers.edges,
@@ -178,24 +177,6 @@ query {
       }
     }
   }
-  allFeedTrashFuture(limit:3) {
-    totalCount
-    edges {
-      node {
-        title
-        isoDate
-        link
-        pubDate
-        enclosure {
-          url
-        }
-        contentSnippet
-        itunes {
-          author
-        }
-      }
-    }
-  }
     allFeedTheAntifada(limit:3) {
     totalCount
     edges {
@@ -333,9 +314,6 @@ query {
          url
        }
        contentSnippet
-       itunes {
-         author
-       }
      }
    }
 

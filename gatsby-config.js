@@ -60,13 +60,6 @@ module.exports = {
     {
       resolve: `gatsby-source-rss-feed`,
       options: {
-        url: `https://trashfuturepodcast.podbean.com/feed.xml`,
-        name: `TrashFuture`,
-    }
-  },
-    {
-      resolve: `gatsby-source-rss-feed`,
-      options: {
         url: `https://feeds.fans.fm/105.xml`,
         name: `TheAntifada`,
     }

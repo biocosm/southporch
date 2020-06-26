@@ -7,17 +7,20 @@ import SEO from "../components/seo"
 export default( { data } ) => {
 
   const feeds = [
-    ...data.allFeedBeepBeep.edges,
+    ...data.allFeedMarxMadness.edges,
+    ...data.allFeedAintShit.edges,    
+    ...data.allFeedHomoVulgaris.edges,
+    ...data.allFeedDumbAwful.edges,
+    ...data.allFeedArtLabor.edges,
+    ...data.allFeedRevLeft.edges,
+    ...data.allFeedDeathPanel.edges,
     ...data.allFeedStreetFight.edges,
     ...data.allFeedSrslyWrong.edges,
     ...data.allFeedMandatoryOt.edges,
     ...data.allFeedTheAntifada.edges,
-    ...data.allFeedChapoTrap.edges,
     ...data.allFeedTrillbillyWorkers.edges,
     ...data.allFeedQAnonAnon.edges,
     ...data.allFeedDumbBitch.edges,
-    ...data.allFeedCurrentAffairs.edges,
-    ...data.allFeedPodDamn.edges,
     ...data.allFeedInterGalactic.edges,
     ...data.allFeedPsychicDolphin.edges
   ].sort( function( a, b ) {
@@ -105,7 +108,109 @@ export default( { data } ) => {
 
 export const query = graphql `
 query {
-  allFeedBeepBeep(limit:3) {
+    allFeedMarxMadness(limit:3) {
+    totalCount
+    edges {
+      node {
+        title
+        isoDate
+        link
+        pubDate
+        enclosure {
+          url
+        }
+        contentSnippet
+      }
+    }
+  }
+    allFeedAintShit(limit:3) {
+    totalCount
+    edges {
+      node {
+        title
+        isoDate
+        link
+        pubDate
+        enclosure {
+          url
+        }
+        contentSnippet
+        itunes {
+          author
+        }
+      }
+    }
+  }
+    allFeedHomoVulgaris(limit:3) {
+    totalCount
+    edges {
+      node {
+        title
+        isoDate
+        link
+        pubDate
+        enclosure {
+          url
+        }
+        contentSnippet
+        itunes {
+          author
+        }
+      }
+    }
+  }
+    allFeedDumbAwful(limit:3) {
+    totalCount
+    edges {
+      node {
+        title
+        isoDate
+        link
+        pubDate
+        enclosure {
+          url
+        }
+        contentSnippet
+        itunes {
+          author
+        }
+      }
+    }
+  }
+    allFeedArtLabor(limit:3) {
+    totalCount
+    edges {
+      node {
+        title
+        isoDate
+        link
+        pubDate
+        enclosure {
+          url
+        }
+        contentSnippet
+        itunes {
+          author
+        }
+      }
+    }
+  }
+  allFeedRevLeft(limit:3) {
+    totalCount
+    edges {
+      node {
+        title
+        isoDate
+        link
+        pubDate
+        enclosure {
+          url
+        }
+        contentSnippet
+      }
+    }
+  }
+  allFeedDeathPanel(limit:3) {
     totalCount
     edges {
       node {
@@ -193,26 +298,6 @@ query {
       }
     }
   }
-
-    allFeedChapoTrap(limit:3) {
-    totalCount
-    edges {
-      node {
-        title
-        isoDate
-        link
-        pubDate
-        enclosure {
-          url
-        }
-        contentSnippet
-        itunes {
-          author
-        }
-      }
-    }
-
-  }
     allFeedTrillbillyWorkers(limit:3) {
     totalCount
     edges {
@@ -266,42 +351,7 @@ query {
       }
     }
 
-  }  allFeedCurrentAffairs(limit:3) {
-    totalCount
-    edges {
-      node {
-        title
-        isoDate
-        link
-        pubDate
-        enclosure {
-          url
-        }
-        itunes {
-          author
-        }
-      }
-    }
-
-  }  allFeedPodDamn(limit:3) {
-    totalCount
-    edges {
-      node {
-        title
-        isoDate
-        link
-        pubDate
-        enclosure {
-          url
-        }
-        contentSnippet
-        itunes {
-          author
-        }
-      }
-    }
-
-  }
+  }    
   allFeedInterGalactic(limit:3) {
    totalCount
    edges {

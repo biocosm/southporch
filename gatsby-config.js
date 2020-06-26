@@ -28,14 +28,56 @@ module.exports = {
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
         crossOrigin: `use-credentials`,
       },
-    },
+    },   
     {
       resolve: `gatsby-source-rss-feed`,
       options: {
-        url: `https://beepbeeplettuce.podbean.com/feed.xml`,
-        name: `BeepBeep`,
+        url: `https://feeds.soundcloud.com/users/soundcloud:users:655263318/sounds.rss`,
+        name: `AintShit`,
+    }
+  },    
+    {
+      resolve: `gatsby-source-rss-feed`,
+      options: {
+        url: `https://feeds.soundcloud.com/users/soundcloud:users:46238545/sounds.rss`,
+        name: `HomoVulgaris`,
     }
   },
+    {
+      resolve: `gatsby-source-rss-feed`,
+      options: {
+        url: `https://feeds.fireside.fm/dumbandawful/rss`,
+        name: `DumbAwful`,
+    }
+  },
+    {
+      resolve: `gatsby-source-rss-feed`,
+      options: {
+        url: `http://artandlaborpodcast.com/feed/podcast`,
+        name: `ArtLabor`,
+    }
+  },
+    {
+      resolve: `gatsby-source-rss-feed`,
+      options: {
+        url: `https://revolutionaryleftradio.libsyn.com/rss`,
+        name: `RevLeft`,
+    }
+  },
+    {
+      resolve: `gatsby-source-rss-feed`,
+      options: {
+        url: `https://pinecast.com/feed/marxmadness`,
+        name: `MarxMadness`,
+    }
+  },
+    {
+      resolve: `gatsby-source-rss-feed`,
+      options: {
+        url: `https://feeds.soundcloud.com/users/soundcloud:users:545327328/sounds.rss`,
+        name: `DeathPanel`,
+    }
+  },  
     {
       resolve: `gatsby-source-rss-feed`,
       options: {
@@ -67,13 +109,6 @@ module.exports = {
     {
       resolve: `gatsby-source-rss-feed`,
       options: {
-        url: `https://feeds.soundcloud.com/users/soundcloud:users:211911700/sounds.rss`,
-        name: `ChapoTrap`,
-    }
-  },
-    {
-      resolve: `gatsby-source-rss-feed`,
-      options: {
         url: `https://feeds.soundcloud.com/users/soundcloud:users:300222802/sounds.rss`,
         name: `TrillbillyWorkers`,
     }
@@ -92,20 +127,7 @@ module.exports = {
         name: `DumbBitch`,
     }
   },
-    {
-      resolve: `gatsby-source-rss-feed`,
-      options: {
-        url: `https://rss.simplecast.com/podcasts/5716/rss`,
-        name: `CurrentAffairs`,
-    }
-  },
-    {
-      resolve: `gatsby-source-rss-feed`,
-      options: {
-        url: `https://feeds.soundcloud.com/users/soundcloud:users:324031914/sounds.rss`,
-        name: `PodDamn`,
-    }
-  },
+
     {
       resolve: `gatsby-source-rss-feed`,
       options: {

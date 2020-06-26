@@ -39,6 +39,13 @@ module.exports = {
     {
       resolve: `gatsby-source-rss-feed`,
       options: {
+        url: `https://beepbeeplettuce.podbean.com/feed.xml`,
+        name: `BeepBeep`,
+    }
+  },
+    {
+      resolve: `gatsby-source-rss-feed`,
+      options: {
         url: `https://feeds.soundcloud.com/users/soundcloud:users:760496857/sounds.rss`,
         name: `ThinkTank`,
     }

@@ -8,6 +8,7 @@ export default( { data } ) => {
 
   const feeds = [
     ...data.allFeedMarxMadness.edges,
+    ...data.allFeedBeepBeep.edges,        
     ...data.allFeedThinkTank.edges,        
     ...data.allFeedAintShit.edges,    
     ...data.allFeedHomoVulgaris.edges,
@@ -121,6 +122,24 @@ query {
           url
         }
         contentSnippet
+      }
+    }
+  }
+    allFeedBeepBeep(limit:3) {
+    totalCount
+    edges {
+      node {
+        title
+        isoDate
+        link
+        pubDate
+        enclosure {
+          url
+        }
+        contentSnippet
+        itunes {
+          author
+        }
       }
     }
   }

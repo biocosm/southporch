@@ -8,6 +8,8 @@ export default( { data } ) => {
 
   const feeds = [
     ...data.allFeedMarxMadness.edges,
+    ...data.allFeedCurrentAffairs.edges,        
+    ...data.allFeedPodDamn.edges,        
     ...data.allFeedBeepBeep.edges,        
     ...data.allFeedThinkTank.edges,        
     ...data.allFeedAintShit.edges,    
@@ -122,6 +124,42 @@ query {
           url
         }
         contentSnippet
+      }
+    }
+  }
+    allFeedCurrentAffairs(limit:3) {
+    totalCount
+    edges {
+      node {
+        title
+        isoDate
+        link
+        pubDate
+        enclosure {
+          url
+        }
+        contentSnippet
+        itunes {
+          author
+        }
+      }
+    }
+  }
+    allFeedPodDamn(limit:3) {
+    totalCount
+    edges {
+      node {
+        title
+        isoDate
+        link
+        pubDate
+        enclosure {
+          url
+        }
+        contentSnippet
+        itunes {
+          author
+        }
       }
     }
   }

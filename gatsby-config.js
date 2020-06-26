@@ -39,6 +39,20 @@ module.exports = {
     {
       resolve: `gatsby-source-rss-feed`,
       options: {
+        url: `https://rss.simplecast.com/podcasts/5716/rss`,
+        name: `CurrentAffairs`,
+    }
+  },
+    {
+      resolve: `gatsby-source-rss-feed`,
+      options: {
+        url: `http://feeds.soundcloud.com/users/soundcloud:users:324031914/sounds.rss`,
+        name: `PodDamn`,
+    }
+  },
+    {
+      resolve: `gatsby-source-rss-feed`,
+      options: {
         url: `https://beepbeeplettuce.podbean.com/feed.xml`,
         name: `BeepBeep`,
     }
